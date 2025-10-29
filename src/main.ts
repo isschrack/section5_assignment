@@ -26,7 +26,7 @@ function setup() {
   const counter_button = document.getElementById(b);
 
   // Check if any element is missing, then exit the function
-  if (!bI || !bD || !bR || !ctr) return;
+  if (!increment_button || !decrement_button || !reset_button || !ctr) return;
 
   // Add click event to the increment button
   bI.addEventListener("click", () => {
@@ -41,7 +41,7 @@ function setup() {
   });
 
   // Add click event to the decrement button
-  bD.addEventListener("click", () => {
+  bdecrement_button.addEventListener("click", () => {
     // Decrease the counter by 1
     c--;
     // Update the counter display
