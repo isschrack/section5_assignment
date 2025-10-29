@@ -17,13 +17,13 @@ function setup() {
   `;
 
   // Get the increment button element from the document
-  const bI = document.getElementById(a);
+  const increment_button = document.getElementById(a);
   // Get the decrement button element from the document
-  const bD = document.getElementById("dec");
+  const decrement_button = document.getElementById("dec");
   // Get the reset button element from the document
-  const bR = document.getElementById("reset");
+  const reset_button = document.getElementById("reset");
   // Get the counter span element from the document
-  const ctr = document.getElementById(b);
+  const counter_button = document.getElementById(b);
 
   // Check if any element is missing, then exit the function
   if (!bI || !bD || !bR || !ctr) return;
