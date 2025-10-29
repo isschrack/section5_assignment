@@ -1,7 +1,7 @@
 // CMPM 121 Smelly Code Activity
 
 // This variable keeps track of the counter
-let c = 0;
+let counter = 0;
 
 // These constants are for button IDs and heading text
 const a = "increment", b = "counter", h = "CMPM 121 Project";
@@ -31,37 +31,37 @@ function setup() {
   // Add click event to the increment button
   bI.addEventListener("click", () => {
     // Increase the counter by 1
-    c++;
+    counter++;
     // Update the counter display
-    ctr.innerHTML = `${c}`;
+    ctr.innerHTML = `${counter}`;
     // Update the document title
-    document.title = "Clicked " + c;
+    document.title = "Clicked " + counter;
     // Change the background color based on even/odd count
-    document.body.style.backgroundColor = c % 2 ? "pink" : "lightblue";
+    document.body.style.backgroundColor = counter % 2 ? "pink" : "lightblue";
   });
 
   // Add click event to the decrement button
-  bdecrement_button.addEventListener("click", () => {
+  decrement_button.addEventListener("click", () => {
     // Decrease the counter by 1
-    c--;
+    counter--;
     // Update the counter display
-    ctr.innerHTML = `${c}`;
+    ctr.innerHTML = `${counter}`;
     // Update the document title
-    document.title = "Clicked " + c;
+    document.title = "Clicked " + counter;
     // Change the background color based on even/odd count
-    document.body.style.backgroundColor = c % 2 ? "pink" : "lightblue";
+    document.body.style.backgroundColor = counter % 2 ? "pink" : "lightblue";
   });
 
   // Add click event to the reset button
   bR.addEventListener("click", () => {
     // Reset the counter to 0
-    c = 0;
+    counter = 0;
     // Update the counter display
-    ctr.innerHTML = `${c}`;
+    ctr.innerHTML = `${counter}`;
     // Update the document title
-    document.title = "Clicked " + c;
+    document.title = "Clicked " + counter;
     // Change the background color based on even/odd count
-    document.body.style.backgroundColor = c % 2 ? "pink" : "lightblue";
+    document.body.style.backgroundColor = counter % 2 ? "pink" : "lightblue";
   });
 }
 
